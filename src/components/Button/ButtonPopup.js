@@ -1,22 +1,13 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import IconPlus from "@/images/plus.svg";
-import { CoralPopup } from "@/components/Popup/CoralPopup.js";
 
-export const ButtonPopup = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  const handleButtonClick = () => {
-    setIsPopupOpen(true);
-  };
-
+export const ButtonPopup = ({ isOpen }) => {
   return (
     <div>
-      <button type="button" onClick={handleButtonClick} width={50} height={50}>
+      <button type="button" onClick={isOpen} width={50} height={50}>
         <Image priority src={IconPlus} alt="Plus" />
       </button>
-      {isPopupOpen && <CoralPopup />}
     </div>
   );
 };

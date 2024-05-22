@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { ButtonClosePopup } from "@/components/Button/ButtonClosePopup.js";
 import { ButtonProdject } from "@/components/Button/ButtonProdject.js";
 
-export const CoralPopup = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
+export const CoralPopup = ({ isVisible, closePopup }) => {
   return (
     <div style={{ display: isVisible ? "block" : "none" }}>
       <ButtonClosePopup />

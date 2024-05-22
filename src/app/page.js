@@ -7,7 +7,7 @@ import { GoodbodiBlock } from "@/components/Block/GoodbodiBlock.js";
 import { ButtonModal } from "@/components/Button/ButtonModal.js";
 import { VocalipPopup } from "@/components/Popup/VocalipPopup.js";
 import { LogicomPopup } from "@/components/Popup/LogicomPopup.js";
-import { CoralPopup } from "@/components/Popup/CoralPopup.js";
+// import { CoralPopup } from "@/components/Popup/CoralPopup.js";
 import { GoodbodiPopup } from "@/components/Popup/GoodbodiPopup.js";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <ButtonModal />
       <VocalipPopup />
       <LogicomPopup />
-      <CoralPopup />
+      {/* <CoralPopup /> */}
       <GoodbodiPopup />
     </main>
   );
