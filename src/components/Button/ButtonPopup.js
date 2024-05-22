@@ -1,5 +1,5 @@
-import IconPlus from "@/images/plus.svg";
 import Image from "next/image";
+import IconPlus from "@/images/plus.svg";
 
 export const ButtonPopup = () => {
   return (

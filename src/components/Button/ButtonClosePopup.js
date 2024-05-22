@@ -1,7 +1,8 @@
-import IconDash from "@/images/dash.svg";
 import Image from "next/image";
+import IconDash from "@/images/dash.svg";
 
-export const ButtonPopup = () => {
+
+export const ButtonClosePopup = () => {
   return (
     <div>
       <button type="button">
