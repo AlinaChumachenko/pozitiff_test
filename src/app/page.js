@@ -1,3 +1,5 @@
+"use client";
+
 import { VocalipBlock } from "@/components/Block/VocalipBlock.js";
 import { LogicomBlock } from "@/components/Block/LogicomBlock.js";
 import { CoralBlock } from "@/components/Block/CoralBlock.js";
