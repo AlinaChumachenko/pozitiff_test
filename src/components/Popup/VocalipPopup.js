@@ -1,14 +1,12 @@
-import { useState } from "react";
+import React from "react";
 
-import { ButtonClosePopup } from "@/components/Button/ButtonClosePopup.js";
 import { ButtonProdject } from "@/components/Button/ButtonProdject.js";
+import { ButtonClosePopup } from "@/components/Button/ButtonClosePopup";
 
-export const VocalipPopup = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
+export const VocalipPopup = ({ isOpen, closePopup }) => {
   return (
-    <div style={{ display: isVisible ? "block" : "none" }}>
-      <ButtonClosePopup />
+    <div style={{ display: isOpen ? "block" : "none" }}>
+      <ButtonClosePopup toggleOpen={closePopup} />
       <h2>VOCALIP</h2>
       <p>Description about project</p>
       <p>Website design & code</p>

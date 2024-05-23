@@ -5,7 +5,7 @@ import { ButtonProdject } from "@/components/Button/ButtonProdject.js";
 
 export const CoralPopup = ({ isOpen, closePopup }) => {
   return (
-    <div style={{ display: isOpen ? "dlock" : "none" }}>
+    <div style={{ display: isOpen ? "block" : "none" }}>
       <ButtonClosePopup toggleOpen={closePopup} />
       <h2>Coral Coalition</h2>
       <p>Description about project</p>

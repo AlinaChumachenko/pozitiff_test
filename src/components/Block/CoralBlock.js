@@ -8,7 +8,6 @@ export const CoralBlock = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const hundleTogglePopup = () => {
     setIsPopupOpen((prev) => !prev);
-    console.log(setIsPopupOpen);
   };
   return (
     <div>
