@@ -1,16 +1,16 @@
 import React from "react";
 import { ButtonCloseModal } from "@/components/Button/ButtonCloseModal";
 
-export const UserForm = ({ closeModal }) => {
+export const UserForm = ({ isOpen, closeModal }) => {
   const handleSubmit = (event) => {
     preventDefault();
   };
   return (
-    <div>
+    <div style={{ display: isOpen ? "block" : "none" }}>
       <h1>Send</h1>
-      <ButtonCloseModal onClick={closeModal} />
+      <ButtonCloseModal toggleOpen={closeModal} />
       <form onSubmit={handleSubmit}>
-        <label for="name">
+        <label>
           Name * :
           <input
             type="text"
@@ -22,7 +22,7 @@ export const UserForm = ({ closeModal }) => {
             autofocus
           />
         </label>
-        <label for="email">
+        <label>
           Email * :
           <input
             type="email"
@@ -32,7 +32,7 @@ export const UserForm = ({ closeModal }) => {
             title="Email may contain letters, numbers, an apostrophe, and must be followed by '@' domain name '.' domain suffix."
           />
         </label>
-        <label for="tel">
+        <label>
           Phone number * :
           <input
             type="tel"
@@ -43,7 +43,7 @@ export const UserForm = ({ closeModal }) => {
             required
           />
         </label>
-        <label for="message">
+        <label>
           Message:
           <textarea
             name="message"

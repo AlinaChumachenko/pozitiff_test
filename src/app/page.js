@@ -4,8 +4,7 @@ import { VocalipBlock } from "@/components/Block/VocalipBlock.js";
 import { LogicomBlock } from "@/components/Block/LogicomBlock.js";
 import { CoralBlock } from "@/components/Block/CoralBlock.js";
 import { GoodbodiBlock } from "@/components/Block/GoodbodiBlock.js";
-import { ButtonModal } from "@/components/Button/ButtonModal.js";
-import { UserForm } from "@/components/UserForm/UserForm";
+import { ModalBlock } from "@/components/Block/ModalBlock.js";
 
 export default function Home() {
   return (
@@ -14,8 +13,7 @@ export default function Home() {
       <LogicomBlock />
       <CoralBlock />
       <GoodbodiBlock />
-      <ButtonModal />
-      <UserForm />
+      <ModalBlock />
     </main>
   );
 }
