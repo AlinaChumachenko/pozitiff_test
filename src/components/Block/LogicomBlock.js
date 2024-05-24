@@ -10,11 +10,15 @@ export const LogicomBlock = () => {
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div>
-      <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
+    <div className="max-w-lg h-119 bg-gradient-to-t from-violet-300 to-indigo-50">
       <LogicomPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
-      <h2>LOGICOM</h2>
-      <Image src={background} alt="Schedule" width={267} height={215} />
+      <div className="flex items-center justify-between">
+        <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
+        <h3 className="text-right mr-12">LOGICOM</h3>
+      </div>
+      <div className="flex justify-center p-28">
+        <Image src={background} alt="Schedule" width={267} height={215} />
+      </div>
     </div>
   );
 };

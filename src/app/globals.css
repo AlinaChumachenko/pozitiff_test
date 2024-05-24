@@ -2,32 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../public/fonts/roboto-v30-cyrillic-regular.woff2")
+      format("woff2");
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  @font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../../public/fonts/rubik-v28-cyrillic-500.woff2") format("woff2");
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @font-face {
+    font-display: swap;
+    font-family: "Saira Extra Condensed";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../public/fonts/saira-extra-condensed-v13-latin-regular.woff2")
+      format("woff2");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../public/fonts/lato-v24-latin-regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../../public/fonts/roboto-v30-cyrillic-500.woff2") format("woff2");
+  }
+
+  *,
+  *::after,
+  *::before {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+  }
+
+  ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+  }
+
+  input {
+    outline: none;
   }
 }

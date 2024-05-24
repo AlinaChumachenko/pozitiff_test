@@ -7,9 +7,9 @@ export const VocalipPopup = ({ isOpen, closePopup }) => {
   return (
     <div style={{ display: isOpen ? "block" : "none" }}>
       <ButtonClosePopup toggleOpen={closePopup} />
-      <h2>VOCALIP</h2>
+      <h3>VOCALIP</h3>
       <p>Description about project</p>
-      <p>Website design & code</p>
+      <h2>Website design & code</h2>
       <ButtonProdject />
     </div>
   );

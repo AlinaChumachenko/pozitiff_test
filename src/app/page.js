@@ -9,11 +9,13 @@ import { ModalBlock } from "@/components/Block/ModalBlock.js";
 export default function Home() {
   return (
     <main>
-      <VocalipBlock />
-      <LogicomBlock />
-      <CoralBlock />
-      <GoodbodiBlock />
-      <ModalBlock />
+      <div className="container mx-auto mt-32">
+        <VocalipBlock />
+        <LogicomBlock />
+        <CoralBlock />
+        <GoodbodiBlock />
+        <ModalBlock />
+      </div>
     </main>
   );
 }

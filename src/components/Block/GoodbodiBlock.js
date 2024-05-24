@@ -10,11 +10,16 @@ export const GoodbodiBlock = () => {
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div>
-      <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
+    <div className="max-w-lg h-119 bg-fuchsia-50">
       <GoodbodiPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
-      <h2>GOODBODI</h2>
-      <Image src={background} alt="Circles" width={250} height={2} />
+      <div className="flex items-center justify-between">
+        <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
+
+        <h3 className="text-right mr-12">GOODBODI</h3>
+      </div>
+      <div className="flex justify-center py-28">
+        <Image src={background} alt="Circles" width={250} height={250} />
+      </div>
     </div>
   );
 };

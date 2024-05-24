@@ -19,7 +19,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
             pattern="^(?! )[^0-9]+$"
             title="Name may contain only letters, apostrophe, dash and spaces."
             required
-            autofocus
+            // autofocus
           />
         </label>
         <label>

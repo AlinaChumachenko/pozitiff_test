@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import background from "@/images/ill_hero.png";
+import FonImages from "@/images/ill_hero.png";
 import { VocalipPopup } from "@/components/Popup/VocalipPopup";
 import { ButtonPopup } from "@/components/Button/ButtonPopup";
 
@@ -10,11 +10,15 @@ export const VocalipBlock = () => {
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div>
-      <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
+    <div className="max-w-lg h-119 bg-gradient-to-t from-violet-300 to-indigo-50">
       <VocalipPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
-      <h2>VOCALIP</h2>
-      <Image src={background} alt="Schedule" width={555} height={226} />
+      <div className="flex items-center justify-between">
+        <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
+        <h3 className="text-right mr-12">VOCALIP</h3>
+      </div>
+      <div className="flex justify-center py-28">
+        <Image src={FonImages} alt="Schedule" width={555} height={226} />
+      </div>
     </div>
   );
 };
