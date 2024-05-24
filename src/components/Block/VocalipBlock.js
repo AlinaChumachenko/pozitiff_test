@@ -10,7 +10,7 @@ export const VocalipBlock = () => {
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div className="max-w-lg h-119 bg-gradient-to-t from-violet-300 to-indigo-50">
+    <div className="max-w-lg h-119 mx-auto bg-gradient-to-t from-violet-300 to-indigo-50">
       <VocalipPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
       <div className="flex items-center justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />

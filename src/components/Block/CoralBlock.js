@@ -11,7 +11,7 @@ export const CoralBlock = () => {
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div className="max-w-lg h-119 bg-gray-50">
+    <div className="max-w-lg h-119 mx-auto  bg-gray-50">
       <CoralPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
       <div className="flex items-center justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
