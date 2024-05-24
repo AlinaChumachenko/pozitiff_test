@@ -5,7 +5,7 @@ export const ButtonModal = ({ toggleOpen }) => {
   return (
     <div className="flex justify-end">
       <button
-        className="max-w-72 h-12 rounded-md border bg-sky-500 hover:bg-sky-700 px-5 py-3"
+        className="max-w-72 h-12 rounded-md border bg-sky-500 hover:bg-sky-700 px-5 py-3 tracking-wide leading-6 text-white"
         type="button"
         onClick={() => toggleOpen()}
         width={200}

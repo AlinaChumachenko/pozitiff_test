@@ -15,7 +15,7 @@ export const GoodbodiBlock = () => {
       <div className="flex items-center justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
 
-        <h3 className="text-right mr-12">GOODBODI</h3>
+        <h3 className="text-right mr-12 text-3xl tracking-wide text-indigo-900">GOODBODI</h3>
       </div>
       <div className="flex justify-center py-28">
         <Image src={background} alt="Circles" width={250} height={250} />

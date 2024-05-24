@@ -15,7 +15,9 @@ export const CoralBlock = () => {
       <CoralPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
       <div className="flex items-center justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
-        <h3 className="text-right mr-12">Coral Coalition</h3>
+        <h3 className="text-right mr-12 text-3xl tracking-wide text-indigo-900">
+          Coral Coalition
+        </h3>
       </div>
       <div className="flex justify-center pt-28">
         <Image src={background} alt="Coral" width={555} height={476} />

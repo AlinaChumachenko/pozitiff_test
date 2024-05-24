@@ -14,7 +14,9 @@ export const VocalipBlock = () => {
       <VocalipPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
       <div className="flex items-center justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
-        <h3 className="text-right mr-12">VOCALIP</h3>
+        <h3 className="text-right mr-12 text-3xl tracking-wide text-indigo-900">
+          VOCALIP
+        </h3>
       </div>
       <div className="flex justify-center py-28">
         <Image src={FonImages} alt="Schedule" width={555} height={226} />
