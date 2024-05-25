@@ -6,7 +6,7 @@ export const ButtonPopup = ({ toggleOpen }) => {
   return (
     <div>
       <button
-        className="w-12 h-12 bg-lime-500 flex justify-center items-center"
+        className="flex justify-center items-center w-24 h-24 bg-lime-500  hover:bg-lime-600"
         type="button"
         onClick={() => toggleOpen()}
         width={50}

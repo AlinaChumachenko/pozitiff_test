@@ -5,7 +5,13 @@ import IconDash from "@/images/dash.svg";
 export const ButtonClosePopup = ({ toggleOpen }) => {
   return (
     <div>
-      <button type="button" onClick={toggleOpen} width={50} height={50}>
+      <button
+        className="flex justify-center items-center w-24 h-24  bg-lime-500  hover:bg-lime-600"
+        type="button"
+        onClick={toggleOpen}
+        width={50}
+        height={50}
+      >
         <Image priority src={IconDash} alt="Dash" />
       </button>
     </div>

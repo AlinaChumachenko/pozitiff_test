@@ -6,12 +6,20 @@ export const UserForm = ({ isOpen, closeModal }) => {
     preventDefault();
   };
   return (
-    <div style={{ display: isOpen ? "block" : "none" }}>
-      <h1>Send</h1>
-      <ButtonCloseModal toggleOpen={closeModal} />
-      <form onSubmit={handleSubmit}>
+    <div
+      className="max-w-md h-96 flex flex-col justify-center items-center"
+      style={{ display: isOpen ? "block" : "none" }}
+    >
+      <div className="flex justify-between">
+        <h1 className="text-left">Send</h1>
+        <ButtonCloseModal toggleOpen={closeModal} />
+      </div>
+      <form
+        onSubmit={handleSubmit}
+        ClassName="flex items-center justify-center"
+      >
         <label>
-          Name * :
+          Name:
           <input
             type="text"
             name="name"
@@ -23,7 +31,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
           />
         </label>
         <label>
-          Email * :
+          Email:
           <input
             type="email"
             name="email"
@@ -33,7 +41,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
           />
         </label>
         <label>
-          Phone number * :
+          Phone number:
           <input
             type="tel"
             name="tel"
