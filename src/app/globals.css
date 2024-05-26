@@ -20,32 +20,14 @@
     src: url("../../public/fonts/rubik-v28-cyrillic-500.woff2") format("woff2");
   }
 
-  /* @font-face {
+  @font-face {
     font-display: swap;
     font-family: "Saira Extra Condensed";
     font-style: normal;
     font-weight: 400;
     src: url("../../public/fonts/saira-extra-condensed-v13-latin-regular.woff2")
       format("woff2");
-  } */
-
-  /* @font-face {
-    font-display: swap;
-    font-family: "Saira Extra Condensed";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../../public/fonts/saira-extra-condensed-v13-latin-ext-regular.woff2")
-      format("woff2");
-  } */
-  @font-face {
-    font-display: swap;
-    font-family: "Saira Extra Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    src: url("../../public/fonts/SairaExtraCondensed-Regular.ttf")
-      format("truetype");
   }
-
   @font-face {
     font-display: swap;
     font-family: "Lato";
