@@ -36,14 +36,6 @@
     src: url("../../public/fonts/lato-v24-latin-regular.woff2") format("woff2");
   }
 
-  @font-face {
-    font-display: swap;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    src: url("../../public/fonts/roboto-v30-cyrillic-500.woff2") format("woff2");
-  }
-
   *,
   *::after,
   *::before {
@@ -59,15 +51,14 @@
     font-size: 18px;
     font-weight: 400;
   }
-
-  h2 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
+  body:has(div.modal-open) {
+    overflow: hidden;
   }
 
+  h2,
   h3 {
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   ul li {
