@@ -16,6 +16,7 @@ module.exports = {
         rubik: ["Rubik"],
         roboto: ["Roboto"],
         saira: ["Saira Extra Condensed"],
+        lato: ["Lato"],
       },
     },
   },
