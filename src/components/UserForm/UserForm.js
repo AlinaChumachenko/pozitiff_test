@@ -1,5 +1,6 @@
 import React from "react";
-import { ButtonCloseModal } from "@/components/Button/ButtonCloseModal";
+import { ButtonCloseModal } from "@/components/Button/ButtonCloseModal.js";
+import { ButtonSendForm } from "@/components/Button/ButtonSendForm.js";
 
 export const UserForm = ({ isOpen, closeModal }) => {
   const handleSubmit = (event) => {
@@ -7,32 +8,28 @@ export const UserForm = ({ isOpen, closeModal }) => {
   };
   return (
     <div
-      className="max-w-md h-96 flex flex-col justify-center items-center"
+      className="max-w-[409px] h-96 p-5 flex flex-col justify-center items-center bg-slate-400"
       style={{ display: isOpen ? "block" : "none" }}
     >
       <div className="flex justify-between">
-        <h1 className="text-left">Send</h1>
+        <ButtonSendForm />
         <ButtonCloseModal toggleOpen={closeModal} />
       </div>
-      <form
-        onSubmit={handleSubmit}
-        ClassName="flex items-center justify-center"
-      >
+      <form onSubmit={handleSubmit} className="flex flex-col gap-2.5 mt-1">
         <label>
-          Name:
           <input
+            className="w-full h-12 p-2.5"
             type="text"
             name="name"
             placeholder="Your Name..."
             pattern="^(?! )[^0-9]+$"
             title="Name may contain only letters, apostrophe, dash and spaces."
             required
-            // autofocus
           />
         </label>
         <label>
-          Email:
           <input
+            className="w-full h-12 p-2.5"
             type="email"
             name="email"
             placeholder="Your Email ..."
@@ -41,8 +38,8 @@ export const UserForm = ({ isOpen, closeModal }) => {
           />
         </label>
         <label>
-          Phone number:
           <input
+            className="w-full h-12 p-2.5"
             type="tel"
             name="tel"
             placeholder="Your Contact Number +XXXXXXX..."
@@ -52,8 +49,8 @@ export const UserForm = ({ isOpen, closeModal }) => {
           />
         </label>
         <label>
-          Message:
           <textarea
+            className="w-full h-[109px] p-2.5"
             name="message"
             rows="8"
             placeholder="Enter you message here..."

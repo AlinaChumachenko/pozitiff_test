@@ -6,6 +6,7 @@ import { CoralBlock } from "@/components/Block/CoralBlock.js";
 import { GoodbodiBlock } from "@/components/Block/GoodbodiBlock.js";
 import { ModalBlock } from "@/components/Block/ModalBlock.js";
 
+
 export default function Home() {
   return (
     <main>
@@ -15,6 +16,7 @@ export default function Home() {
         <CoralBlock />
         <GoodbodiBlock />
         <ModalBlock />
+        
       </div>
     </main>
   );

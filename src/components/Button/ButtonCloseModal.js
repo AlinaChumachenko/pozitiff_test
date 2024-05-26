@@ -5,8 +5,13 @@ import IconClose from "@/images/closex.svg";
 export const ButtonCloseModal = ({ toggleOpen }) => {
   return (
     <div>
-      <button type="button" onClick={toggleOpen} width={110} height={100}>
-        <Image className="text-black" priority src={IconClose} alt="Close" />
+      <button type="button" onClick={toggleOpen} className="w-3.5 h-12">
+        <Image
+          className="filter grayscale"
+          priority
+          src={IconClose}
+          alt="Close"
+        />
       </button>
     </div>
   );
