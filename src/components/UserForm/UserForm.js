@@ -8,7 +8,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
   };
   return (
     <div
-      className="max-w-[409px] h-96 p-5 flex flex-col justify-center items-center bg-slate-400"
+      className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 max-w-[409px] h-96 p-5 mx-auto flex flex-col justify-center items-center bg-slate-400"
       style={{ display: isOpen ? "block" : "none" }}
     >
       <div className="flex justify-between">
