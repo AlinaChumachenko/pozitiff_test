@@ -18,7 +18,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
       <form onSubmit={handleSubmit} className="flex flex-col gap-2.5 mt-1">
         <label>
           <input
-            className="w-full h-12 p-2.5 font-['lato']"
+            className="w-full h-12 p-2.5 font-['lato'] focus:outline focus:outline-offset-2 focus:outline-white"
             type="text"
             name="name"
             placeholder="Your Name..."
@@ -29,7 +29,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
         </label>
         <label>
           <input
-            className="w-full h-12 p-2.5 font-['lato']"
+            className="w-full h-12 p-2.5 font-['lato'] focus:outline focus:outline-offset-2 focus:outline-white"
             type="email"
             name="email"
             placeholder="Your Email ..."
@@ -39,7 +39,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
         </label>
         <label>
           <input
-            className="w-full h-12 p-2.5 font-['lato']"
+            className="w-full h-12 p-2.5 font-['lato'] focus:outline focus:outline-offset-2 focus:outline-white"
             type="tel"
             name="tel"
             placeholder="Your Contact Number +XXXXXXX..."
@@ -50,7 +50,7 @@ export const UserForm = ({ isOpen, closeModal }) => {
         </label>
         <label>
           <textarea
-            className="w-full h-[109px] p-2.5 font-['lato']"
+            className="w-full h-[109px] p-2.5 font-['lato']focus:outline focus:outline-offset-2 focus:outline-white"
             name="message"
             rows="8"
             placeholder="Enter you message here..."
