@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <div className="container mx-auto mt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid-cols-1 lg:grid lg:grid-cols-2">
           <VocalipBlock />
           <LogicomBlock />
           <CoralBlock />
