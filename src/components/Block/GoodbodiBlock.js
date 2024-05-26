@@ -12,7 +12,7 @@ export const GoodbodiBlock = () => {
   return (
     <div className="relative max-w-lg h-119 mx-auto bg-fuchsia-50">
       <GoodbodiPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
-      <div className="flex items-center justify-between">
+      <div className="flex justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
 
         <h3 className="text-right mt-12 mr-12 text-3xl tracking-wide text-indigo-900">
