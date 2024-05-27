@@ -10,7 +10,7 @@ export const GoodbodiBlock = () => {
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div className="relative max-w-lg h-119 mx-auto lg:mx-0 bg-fuchsia-50">
+    <div className="relative max-w-lg h-119 mx-auto lg:mx-0 xl:w-full bg-fuchsia-50">
       <GoodbodiPopup isOpen={isPopupOpen} closePopup={hundleTogglePopup} />
       <div className="flex justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
